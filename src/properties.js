@@ -4,6 +4,7 @@ import { colors } from './theme.js';
 import RoundGlasses from './components/accessories/RoundGlasses.vue';
 import TinyGlasses from './components/accessories/TinyGlasses.vue';
 import Shades from './components/accessories/Shades.vue';
+import HoopEarrings from './components/accessories/HoopEarrings.vue';
 
 // Bodies
 import Chest from './components/bodies/Chest.vue';
@@ -35,6 +36,7 @@ import SimpleEyes from './components/eyes/Simple.vue';
 import DizzyEyes from './components/eyes/Dizzy.vue';
 import WinkEyes from './components/eyes/Wink.vue';
 import HeartEyes from './components/eyes/Heart.vue';
+import CyborgEyes from './components/eyes/Cyborg.vue';
 
 // Facial hair
 import StubbleBeard from './components/facialHair/Stubble.vue';
@@ -47,6 +49,7 @@ import VueGraphic from './components/graphics/Vue.vue';
 import ReactGraphic from './components/graphics/React.vue';
 import GraphQLGraphic from './components/graphics/GraphQL.vue';
 import RainbowGraphic from './components/graphics/Rainbow.vue';
+import DonutGraphic from './components/graphics/Donut.vue';
 
 // Hair
 import LongHairFront from './components/hair/LongHairFront.vue';
@@ -64,6 +67,7 @@ import BobCutBack from './components/hair/BobCutBack.vue';
 // Hat
 import BeanieFront from './components/hats/BeanieFront.vue';
 import BeanieBack from './components/hats/BeanieBack.vue';
+import PartyHat from './components/hats/PartyHat.vue';
 import Turban from './components/hats/Turban.vue';
 
 // Mouth
@@ -74,6 +78,7 @@ import Lips from './components/mouths/Lips.vue';
 import OpenMouth from './components/mouths/OpenMouth.vue';
 import SeriousMouth from './components/mouths/SeriousMouth.vue';
 import Tongue from './components/mouths/Tongue.vue';
+import PiercedTongue from './components/mouths/PiercedTongue.vue';
 
 // Shape
 import Circle from './components/shapes/Circle.vue';
@@ -89,6 +94,7 @@ export const properties = {
 			roundGlasses: RoundGlasses,
 			tinyGlasses: TinyGlasses,
 			shades: Shades,
+			hoopEarrings: HoopEarrings,
 		},
 	},
 	body: {
@@ -140,6 +146,7 @@ export const properties = {
 			dizzy: DizzyEyes,
 			wink: WinkEyes,
 			heart: HeartEyes,
+			cyborg: CyborgEyes,
 		},
 	},
 	facialHair: {
@@ -166,6 +173,7 @@ export const properties = {
 			react: ReactGraphic,
 			graphQL: GraphQLGraphic,
 			rainbow: RainbowGraphic,
+			donut: DonutGraphic,
 		},
 	},
 	hair: {
@@ -193,6 +201,7 @@ export const properties = {
 		map: {
 			none: { Front: null, Back: null },
 			beanie: { Front: BeanieFront, Back: BeanieBack },
+			partyHat: { Front: PartyHat, Back: null },
 			turban: { Front: Turban, Back: null },
 		},
 	},
@@ -223,6 +232,7 @@ export const properties = {
 			open: OpenMouth,
 			serious: SeriousMouth,
 			tongue: Tongue,
+			piercedTongue: PiercedTongue,
 		},
 	},
 	shape: {

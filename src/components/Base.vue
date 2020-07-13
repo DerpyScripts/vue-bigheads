@@ -95,8 +95,8 @@
 				:color="values.clothing.Back === DressShirt ? colors.clothing.white : values.clothingColor"
 			/>
 			<component :is="values.clothing.Front" :color="values.clothingColor" :skin="values.skinTone" :graphic="values.graphic" />
-			<component :is="values.facialHair" :color="values.facialHairColor" />
 			<component :is="values.eyes" :skin="values.skinTone" :withLashes="values.lashes" />
+			<component :is="values.facialHair" :color="values.facialHairColor" />
 			<component :is="values.mouth" :lipColor="values.lipColor" />
 			<component :is="values.hair.Front" :color="values.hairColor" :skin="values.skinTone" :hasHat="values.hat.Front !== null" />
 			<component :is="values.eyebrows" />

@@ -136,7 +136,7 @@ export const colors = {
 			base: "#ED9191",
 		},
 		orange: {
-			base: "#D96E27",	
+			base: "#FF9854",	
 		},
 		yellow: {
 			base: "#FADB5F",	
