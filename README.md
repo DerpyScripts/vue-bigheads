@@ -78,7 +78,7 @@ Some possible values for the properties above have been changed, as outlined bel
 | eyes               | `'normal'`, `'leftTwitch'`, `'happy'`, `'content'`, `'squint'`, `'simple'`, `'dizzy'`, `'wink'`, `'heart'`,`'cyborg'` |
 | facialHair         | `'none'`, `'stubble'`, `'mediumBeard'` |
 | facialHairColor    | `'white'`, `'blonde'`, `'brown'`, `'black'`, `'red'`, `'orange'`, `'green'`, `'blue'`, `'pink'`, `'purple'` |
-| graphic            | `'none'`, `'redwood'`, `'gatsby'`, `'vue'`, `'react'`, `'graphQL'`, `'rainbow'` |
+| graphic            | `'none'`, `'redwood'`, `'gatsby'`, `'vue'`, `'react'`, `'graphQL'`, `'rainbow'`, `'donut'` |
 | hair               | `'none'`, `'long'`, `'bun'`, `'short'`, `'pixie'`, `'balding'`, `'buzz'`, `'afro'`, `'bob'` |
 | hairColor          | `'white'`, `'blonde'`, `'brown'`, `'black'`, `'red'`, `'orange'`, `'green'`, `'blue'`, `'pink'`, `'purple' |
 | hat                | `'none`', `'beanie'`, `'partyHate'`, `'turban'` |
