@@ -108,7 +108,7 @@ The `shapeColor` property only uses the base color, so the shadow color can be o
 ```
 
 
-### Custom designs
+## Custom designs
 Some parameters (accessory, eyebrows, eyes, facialHair, graphic, mouth, skinTone) can be extended with your own designs and colors.
 
 #### Illustrations
