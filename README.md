@@ -111,7 +111,7 @@ The `shapeColor` property only uses the base color, so the shadow color can be o
 ## Custom designs
 Some parameters (accessory, eyebrows, eyes, facialHair, graphic, mouth, skinTone) can be extended with your own designs and colors.
 
-#### Illustrations
+### Illustrations
 All of the above parameters, except `skinTone`, are expandable by passing an object containing Vue single file components when loading the plugin.
 
 Here's an example of a custom illustration component:
@@ -161,10 +161,10 @@ The props passed to each component vary depending on what parameter you attach i
 
 `withLashes` is a boolean that reflects the value of the `lashes` parameter.
 
-#### Colors
+### Colors
 The `skinTone` parameter is expandable by passing an object containing color classes (see 'Custom colors' section).
 
-#### Example config
+### Example config
 ```javascript
 import Vue from "vue";
 import VueBigHeads from "vue-bigheads";
