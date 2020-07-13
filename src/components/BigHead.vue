@@ -22,6 +22,23 @@ export default {
 		Base
 	},
 	computed: {
+		properties() {
+			var extended = properties;
+			var extras =this.$bigHeadsExtras();
+			var props = ['accessory', 'eyebrows', 'eyes', 'facialHair', 'graphic', 'mouth', 'skinTone'];
+			
+			for (var i = 0; i < props.length; i++) {
+				var extras_map = extras[props[i]];
+				
+				for (var prop in extras_map) {
+					if (extras_map.hasOwnProperty(prop)) {
+						extended[props[i]].map[prop] = extras_map[prop];
+					}
+				}
+			}
+			
+			return extended;
+		},
 		values() {
 			var shape = this.validateProperty(this.shape, 'shape');
 			var mask = null;
@@ -64,44 +81,44 @@ export default {
 		validateProperty(value, prop) {
 			if (typeof value == 'undefined') {
 				//if (!properties[prop].default) {
-					return this.chooseRandomValue(properties[prop].map);
+					return this.chooseRandomValue(this.properties[prop].map);
 				//}
 				
 				//value = properties[prop].default;
 			}
 			
-			if (properties[prop].is_color == true) return this.validateColor(value, prop);
+			if (this.properties[prop].is_color == true) return this.validateColor(value, prop);
 			
-			if (!Object.keys(properties[prop].map).includes(value)) {
+			if (!Object.keys(this.properties[prop].map).includes(value)) {
 				this.throwError(`Invalid value set for ${prop} - unknown value`);
-				return this.chooseRandomValue(properties[prop].map);
+				return this.chooseRandomValue(this.properties[prop].map);
 			}
 			
-			return properties[prop].map[value];
+			return this.properties[prop].map[value];
 		},
 		validateColor(color, prop) {
 			if (typeof color == 'string') {
-				if (!Object.keys(properties[prop].map).includes(color)) {
+				if (!Object.keys(this.properties[prop].map).includes(color)) {
 					this.throwError(`Invalid value set for ${prop} - unknown color`);
-					return this.chooseRandomValue(properties[prop].map);
+					return this.chooseRandomValue(this.properties[prop].map);
 				}
 				
-				return properties[prop].map[color];
+				return this.properties[prop].map[color];
 			} else if (typeof color == 'object') {
 				if (!color.base || !this.validateHex(color.base)) {
 					this.throwError(`Invalid value set for ${prop} - base color must be a valid hex code`);
-					return this.chooseRandomValue(properties[prop].map);
+					return this.chooseRandomValue(this.properties[prop].map);
 				}
 				
 				if (prop != 'shapeColor' && (!color.shadow || !this.validateHex(color.shadow))) {
 					this.throwError(`Invalid value set for ${prop} - shadow color must be a valid hex code`);
-					return this.chooseRandomValue(properties[prop].map);
+					return this.chooseRandomValue(this.properties[prop].map);
 				}
 				
 				return color;
 			} else {
 				this.throwError(`Invalid value set for ${prop} - must be string or object`);
-				return this.chooseRandomValue(properties[prop].map);
+				return this.chooseRandomValue(this.properties[prop].map);
 			}
 		},
 		validateHex(hex) {

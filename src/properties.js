@@ -5,6 +5,7 @@ import RoundGlasses from './components/accessories/RoundGlasses.vue';
 import TinyGlasses from './components/accessories/TinyGlasses.vue';
 import Shades from './components/accessories/Shades.vue';
 import HoopEarrings from './components/accessories/HoopEarrings.vue';
+import FaceMask from './components/accessories/FaceMask.vue';
 
 // Bodies
 import Chest from './components/bodies/Chest.vue';
@@ -39,6 +40,7 @@ import HeartEyes from './components/eyes/Heart.vue';
 import CyborgEyes from './components/eyes/Cyborg.vue';
 
 // Facial hair
+import Goatee from './components/facialHair/Goatee.vue';
 import StubbleBeard from './components/facialHair/Stubble.vue';
 import MediumBeard from './components/facialHair/MediumBeard.vue';
 
@@ -63,6 +65,7 @@ import AfroFront from './components/hair/AfroFront.vue';
 import AfroBack from './components/hair/AfroBack.vue';
 import BobCutFront from './components/hair/BobCutFront.vue';
 import BobCutBack from './components/hair/BobCutBack.vue';
+import Mohawk from './components/hair/Mohawk.vue';
 
 // Hat
 import BeanieFront from './components/hats/BeanieFront.vue';
@@ -95,6 +98,7 @@ export const properties = {
 			tinyGlasses: TinyGlasses,
 			shades: Shades,
 			hoopEarrings: HoopEarrings,
+			faceMask: FaceMask,
 		},
 	},
 	body: {
@@ -154,6 +158,7 @@ export const properties = {
 		is_color: false,
 		map: {
 			none: null,
+			goatee: Goatee,
 			stubble: StubbleBeard,
 			mediumBeard: MediumBeard,
 		},
@@ -189,6 +194,7 @@ export const properties = {
 			buzz: { Front: BuzzCut, Back: null },
 			afro: { Front: AfroFront, Back: AfroBack },
 			bob: { Front: BobCutFront, Back: BobCutBack },
+			mohawk: { Front: Mohawk, Back: null },
 		},
 	},
 	hairColor: {

@@ -1,7 +1,7 @@
 <template>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 990">
-		<component :is="values.mask" maskId="bigheadMask" />
-		<g mask="url(#bigheadMask)">
+		<component :is="values.mask" :maskId="maskId" />
+		<g :mask="'url(#' + maskId + ')'">
 			<component :is="values.shape" :color="values.shapeColor" />
 			<component :is="values.hat.Back" :color="values.hatColor" :scale="hatScale" />
 			<component :is="values.hair.Back" :color="values.hairColor" :skin="values.skinTone" :hasHat="values.hair.Front !== null" />
@@ -96,12 +96,12 @@
 			/>
 			<component :is="values.clothing.Front" :color="values.clothingColor" :skin="values.skinTone" :graphic="values.graphic" />
 			<component :is="values.eyes" :skin="values.skinTone" :withLashes="values.lashes" />
-			<component :is="values.facialHair" :color="values.facialHairColor" />
-			<component :is="values.mouth" :lipColor="values.lipColor" />
+			<component :is="values.facialHair" :skin="values.skinTone" :color="values.facialHairColor" />
+			<component :is="values.mouth" :skin="values.skinTone" :lipColor="values.lipColor" />
 			<component :is="values.hair.Front" :color="values.hairColor" :skin="values.skinTone" :hasHat="values.hat.Front !== null" />
-			<component :is="values.eyebrows" />
+			<component :is="values.eyebrows" :skin="values.skinTone" />
 			<component :is="values.hat.Front" :color="values.hatColor" :scale="hatScale" />
-			<component :is="values.accessory" />
+			<component :is="values.accessory" :skin="values.skinTone" />
 		</g>
     </svg>
 </template>
@@ -116,8 +116,13 @@ export default {
 	data() {
 		return {
 			colors,
-			DressShirt
+			DressShirt,
+			maskId: "",
 		}
+	},
+	created() {
+		var random_int = Math.floor(Math.random() * 10000);
+		this.maskId = "bigheadMask-" + random_int;
 	},
 	computed: {
 		hatScale() {
