@@ -85,7 +85,7 @@ Some possible values for the properties above have been changed, as outlined bel
 | hatColor           | `'white'`, `'black'`, `'red'`, `'orange'`, `'yellow'`, `'green'`, `'turqoise'`, `'blue'`, `'pink'`, `'purple'` |
 | lashes             | `'true'`, `'false'` |
 | lipColor           | `'red'`, `'green'`, `'turqoise'`, `'pink'`, `'purple'` |
-| mouth              | `'grin'`, `'sad'`, `'openSmile'`, `'lips'`, `'open'`, `'serious'`, `'tongue'` |
+| mouth              | `'grin'`, `'sad'`, `'openSmile'`, `'lips'`, `'open'`, `'serious'`, `'tongue'`, `'piercedTongue'` |
 | shape              | `'none'`, `'circle'`, `'square'`, `'squircle'` |
 | shapeColor         | `'red'`, `'orange'`, `'yellow'`, `'green'`, `'blue'`, `'purple'` |
 | skinTone           | `'light'`, `'yellow'`, `'brown'`, `'dark'`, `'red'`, `'black'` |
