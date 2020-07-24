@@ -35,6 +35,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'Tongue',
 	props: ['lipColor'],
+	$hasLips: false,
 	data() {
 		return {
 			colors

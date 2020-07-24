@@ -27,6 +27,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'OpenMouth',
 	props: ['lipColor'],
+	$hasLips: false,
 	data() {
 		return {
 			colors

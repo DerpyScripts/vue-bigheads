@@ -25,6 +25,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'HappyEyes',
 	props: ['withLashes'],
+	$hasLashes: false,
 	data() {
 		return {
 			colors,

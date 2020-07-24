@@ -28,7 +28,6 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'BobCutHairBack',
 	props: ['skin', 'color', 'hasHat'],
-	$hatScale: 1.12,
 	data() {
 		return {
 			colors,

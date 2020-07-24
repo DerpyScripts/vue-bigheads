@@ -40,6 +40,8 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'DressBack',
 	props: ['skin', 'color', 'graphic'],
+	$hasGraphic: false,
+	$customColor: true,
 	data() {
 		return {
 			colors,

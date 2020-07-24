@@ -19,6 +19,12 @@ import VNeck from './components/clothing/VNeck.vue';
 import TankTop from './components/clothing/TankTop.vue';
 import DressFront from './components/clothing/DressFront.vue';
 import DressBack from './components/clothing/DressBack.vue';
+import DenimJacket from './components/clothing/DenimJacket.vue';
+import Hoodie from './components/clothing/Hoodie.vue';
+import ChequeredShirtFront from './components/clothing/ChequeredShirtFront.vue';
+import ChequeredShirtBack from './components/clothing/ChequeredShirtBack.vue';
+import ChequeredShirtDarkFront from './components/clothing/ChequeredShirtDarkFront.vue';
+import ChequeredShirtDarkBack from './components/clothing/ChequeredShirtDarkBack.vue';
 
 // Eyebrows
 import NormalEyebrows from './components/eyebrows/Normal.vue';
@@ -31,13 +37,19 @@ import ConcernedEyebrows from './components/eyebrows/Concerned.vue';
 import NormalEyes from './components/eyes/Normal.vue';
 import LeftTwitchEyes from './components/eyes/LeftTwitch.vue';
 import HappyEyes from './components/eyes/Happy.vue';
+import CuteEyes from './components/eyes/Cute.vue';
 import ContentEyes from './components/eyes/Content.vue';
 import SquintEyes from './components/eyes/Squint.vue';
 import SimpleEyes from './components/eyes/Simple.vue';
 import DizzyEyes from './components/eyes/Dizzy.vue';
+import CrazyEyes from './components/eyes/Crazy.vue';
 import WinkEyes from './components/eyes/Wink.vue';
 import HeartEyes from './components/eyes/Heart.vue';
+import DollarEyes from './components/eyes/Dollar.vue';
+import StarEyes from './components/eyes/Star.vue';
 import CyborgEyes from './components/eyes/Cyborg.vue';
+import EyePatch from './components/eyes/EyePatch.vue';
+import EyePatch2 from './components/eyes/EyePatch2.vue';
 
 // Facial hair
 import Goatee from './components/facialHair/Goatee.vue';
@@ -67,13 +79,15 @@ import BobCutFront from './components/hair/BobCutFront.vue';
 import BobCutBack from './components/hair/BobCutBack.vue';
 import Mohawk from './components/hair/Mohawk.vue';
 
-// Hat
+// Hats
 import BeanieFront from './components/hats/BeanieFront.vue';
 import BeanieBack from './components/hats/BeanieBack.vue';
 import PartyHat from './components/hats/PartyHat.vue';
 import Turban from './components/hats/Turban.vue';
+import Hijab from './components/hats/Hijab.vue';
+import InternCap from './components/hats/InternCap.vue';
 
-// Mouth
+// Mouths
 import Grin from './components/mouths/Grin.vue';
 import SadMouth from './components/mouths/SadMouth.vue';
 import SmileOpen from './components/mouths/SmileOpen.vue';
@@ -82,8 +96,9 @@ import OpenMouth from './components/mouths/OpenMouth.vue';
 import SeriousMouth from './components/mouths/SeriousMouth.vue';
 import Tongue from './components/mouths/Tongue.vue';
 import PiercedTongue from './components/mouths/PiercedTongue.vue';
+import VomitingRainbow from './components/mouths/VomitingRainbow.vue';
 
-// Shape
+// Shapes
 import Circle from './components/shapes/Circle.vue';
 import Square from './components/shapes/Square.vue';
 import Squircle from './components/shapes/Squircle.vue';
@@ -119,6 +134,10 @@ export const properties = {
 			vneck: { Front: null, Back: VNeck },
 			tankTop: { Front: null, Back: TankTop },
 			dress: { Front: DressFront, Back: DressBack },
+			denimJacket: { Front: null, Back: DenimJacket },
+			hoodie: { Front: null, Back: Hoodie },
+			chequeredShirt: { Front: ChequeredShirtFront, Back: ChequeredShirtBack },
+			chequeredShirtDark: { Front: ChequeredShirtDarkFront, Back: ChequeredShirtDarkBack },
 		},
 	},
 	clothingColor: {
@@ -144,13 +163,19 @@ export const properties = {
 			normal: NormalEyes,
 			leftTwitch: LeftTwitchEyes,
 			happy: HappyEyes,
+			cute: CuteEyes,
 			content: ContentEyes,
 			squint: SquintEyes,
 			simple: SimpleEyes,
 			dizzy: DizzyEyes,
+			crazy: CrazyEyes,
 			wink: WinkEyes,
-			heart: HeartEyes,
+			hearts: HeartEyes,
+			dollars: DollarEyes,
+			stars: StarEyes,
 			cyborg: CyborgEyes,
+			eyePatch: EyePatch,
+			eyePatch2: EyePatch2,
 		},
 	},
 	facialHair: {
@@ -209,6 +234,7 @@ export const properties = {
 			beanie: { Front: BeanieFront, Back: BeanieBack },
 			partyHat: { Front: PartyHat, Back: null },
 			turban: { Front: Turban, Back: null },
+			hijab: { Front: Hijab, Back: null },
 		},
 	},
 	hatColor: {
@@ -239,6 +265,7 @@ export const properties = {
 			serious: SeriousMouth,
 			tongue: Tongue,
 			piercedTongue: PiercedTongue,
+			vomitingRainbow: VomitingRainbow,
 		},
 	},
 	shape: {

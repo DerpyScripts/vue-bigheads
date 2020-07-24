@@ -1,5 +1,6 @@
-import { colors } from './theme.js'
-import BigHead from './components/BigHead.vue'
+import { colors } from './theme.js';
+import { properties } from './properties.js';
+import BigHead from './components/BigHead.vue';
 
 const install = (Vue, options) => {
 	Vue.component('BigHead', BigHead);
@@ -14,4 +15,4 @@ export default {
 	install
 }
 
-export { colors, BigHead }
+export { colors, properties, BigHead }

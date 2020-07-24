@@ -165,6 +165,8 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'DressShirt',
 	props: ['skin', 'color', 'graphic'],
+	$hasGraphic: false,
+	$customColor: true,
 	data() {
 		return {
 			colors,

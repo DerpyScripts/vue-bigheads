@@ -1,8 +1,8 @@
 export const colors = {
 	skin: {
 		light: {
-			base: "#fdd2b2",
-			shadow: "#f3ab98",
+			base: "#FDD2B2",
+			shadow: "#F3AB98",
 		},
 		yellow: {
 			base: "#FBE8B3",
@@ -12,13 +12,13 @@ export const colors = {
 			base: "#D8985D",
 			shadow: "#C6854E",
 		},
-		dark: {
-			base: "#A56941",
-			shadow: "#8D5638",
-		},
 		red: {
 			base: "#CC734C",
 			shadow: "#B56241",
+		},
+		dark: {
+			base: "#A56941",
+			shadow: "#8D5638",
 		},
 		black: {
 			base: "#754437",
@@ -30,6 +30,10 @@ export const colors = {
 			base: "#ffffff",
 			shadow: "#E2E2E2",
 		},
+		silver: {
+			base: "#CBD5E0",
+			shadow: "#A0AEC0",
+		},
 		blonde: {
 			base: "#FEDC58",
 			shadow: "#EDBF2E",
@@ -39,54 +43,114 @@ export const colors = {
 			shadow: "#8D5638",
 		},
 		black: {
-			base: "#592d3d",
-			shadow: "#592d3d",
+			base: "#592D3D",
+			shadow: "#46202E",
 		},
 		red: {
-			base: "#D67070",
-			shadow: "#C46565",
+			base: "#E53E3E",
+			shadow: "#C53030",
+		},
+		lightRed: {
+			base: "#FEB2B2",
+			shadow: "#FC8181",
 		},
 		orange: {
-			base: "#D96E27",
-			shadow: "#C65C22",
+			base: "#ED8936",
+			shadow: "#DD6B20",
+		},
+		lightOrange: {
+			base: "#FBD38D",
+			shadow: "#F6AD55",
 		},
 		green: {
-			base: "#89D86F",
-			shadow: "#73C259",
+			base: "#38A169",
+			shadow: "#2F855A",
+		},
+		lightGreen: {
+			base: "#9AE6B4",
+			shadow: "#68D391",
+		},
+		turqoise: {
+			base: "#38B2AC",
+			shadow: "#319795",
+		},
+		lightTurqoise: {
+			base: "#81E6D9",
+			shadow: "#4FD1C5",
 		},
 		blue: {
-			base: "#85c5e5",
-			shadow: "#67B7D6",
+			base: "#3182CE",
+			shadow: "#2B6CB0",
+		},
+		lightBlue: {
+			base: "#BEE3F8",
+			shadow: "#90CDF4",
 		},
 		pink: {
-			base: "#D69AC7",
-			shadow: "#C683B4",
+			base: "#ED64A6",
+			shadow: "#D53F8C",
+		},
+		lightPink: {
+			base: "#FBB6CE",
+			shadow: "#F687B3",
 		},
 		purple: {
-			base: "#A878EB",
-			shadow: "#9564D9",
+			base: "#805AD5",
+			shadow: "#6B46C1",
+		},
+		lightPurple: {
+			base: "#D6BCFA",
+			shadow: "#B794F4",
 		},
 	},
 	lips: {
 		red: {
-			base: "#DD3E3E",
-			shadow: "#C43333",
+			base: "#E53E3E",
+			shadow: "#C53030",
+		},
+		lightRed: {
+			base: "#FEB2B2",
+			shadow: "#FC8181",
 		},
 		green: {
-			base: "#4AB749",
-			shadow: "#3CA047",
+			base: "#48BB78",
+			shadow: "#38A169",
+		},
+		lightGreen: {
+			base: "#9AE6B4",
+			shadow: "#68D391",
 		},
 		turqoise: {
-			base: "#5CCBF1",
-			shadow: "#49B5CD",
+			base: "#38B2AC",
+			shadow: "#319795",
+		},
+		lightTurqoise: {
+			base: "#81E6D9",
+			shadow: "#4FD1C5",
+		},
+		blue: {
+			base: "#4299E1",
+			shadow: "#3182CE",
+		},
+		lightBlue: {
+			base: "#BEE3F8",
+			shadow: "#90CDF4",
 		},
 		pink: {
-			base: "#D69AC7",
-			shadow: "#C683B4",
+			base: "#ED64A6",
+			shadow: "#D53F8C",
+		},
+		lightPink: {
+			base: "#FBB6CE",
+			shadow: "#F687B3",
 		},
 		purple: {
-			base: "#B256A1",
-			shadow: "#9C4490",
+			base: "#9F7AEA",
+			shadow: "#805AD5",
+		},
+		lightPurple: {
+			base: "#D6BCFA",
+			shadow: "#B794F4",
 		},
 	},
 	clothing: {
@@ -94,64 +158,106 @@ export const colors = {
 			base: "#FFFFFF",
 			shadow: "#E2E2E2",
 		},
+		gray: {
+			base: "#A0AEC0",
+			shadow: "#718096",
+		},
 		black: {
 			base: "#633749",
 			shadow: "#5E3244",
 		},
 		red: {
-			base: "#D67070",
-			shadow: "#C46565",
+			base: "#E53E3E",
+			shadow: "#C53030",
+		},
+		lightRed: {
+			base: "#FEB2B2",
+			shadow: "#FC8181",
 		},
 		orange: {
-			base: "#D96E27",
-			shadow: "#C65C22",
+			base: "#ED8936",
+			shadow: "#DD6B20",
+		},
+		lightOrange: {
+			base: "#FBD38D",
+			shadow: "#F6AD55",
 		},
 		yellow: {
-			base: "#FADB5F",
-			shadow: "#EDCD4E",	
+			base: "#ECC94B",
+			shadow: "#D69E2E",	
+		},
+		lightYellow: {
+			base: "#FAF089",
+			shadow: "#F6E05E",
 		},
 		green: {
-			base: "#89D86F",
-			shadow: "#7DC462",
+			base: "#48BB78",
+			shadow: "#38A169",
+		},
+		lightGreen: {
+			base: "#9AE6B4",
+			shadow: "#68D391",
 		},
 		turqoise: {
-			base: "#5CCBF1",
-			shadow: "#49B5CD",
+			base: "#38B2AC",
+			shadow: "#319795",
+		},
+		lightTurqoise: {
+			base: "#81E6D9",
+			shadow: "#4FD1C5",
 		},
 		blue: {
-			base: "#85c5e5",
-			shadow: "#67B7D6",
+			base: "#4299E1",
+			shadow: "#3182CE",
+		},
+		lightBlue: {
+			base: "#BEE3F8",
+			shadow: "#90CDF4",
 		},
 		pink: {
-			base: "#D69AC7",
-			shadow: "#C683B4",
+			base: "#ED64A6",
+			shadow: "#D53F8C",
+		},
+		lightPink: {
+			base: "#FBB6CE",
+			shadow: "#F687B3",
 		},
 		purple: {
-			base: "#A878EB",
-			shadow: "#9564D9",
+			base: "#9F7AEA",
+			shadow: "#805AD5",
+		},
+		lightPurple: {
+			base: "#D6BCFA",
+			shadow: "#B794F4",
 		},
 	},
 	shape: {
 		red: {
-			base: "#ED9191",
+			base: "#FC8181",
 		},
 		orange: {
-			base: "#FF9854",	
+			base: "#F6AD55",
 		},
 		yellow: {
-			base: "#FADB5F",	
+			base: "#F6E05E",
 		},
 		green: {
-			base: "#89D86F",
+			base: "#68D391",
+		},
+		turqoise: {
+			base: "#4FD1C5",
 		},
 		blue: {
-			base: "#85c5e5",
+			base: "#63B3ED",
+		},
+		pink: {
+			base: "#F687B3",
 		},
 		purple: {
-			base: "#A878EB",
+			base: "#B794F4",
 		},
 	},
-	outline: "#592d3d",
-	white: "#ffffff",
-	tongue: "#f28195",
+	outline: "#592D3D",
+	white: "#FFFFFF",
+	tongue: "#F28195",
 };

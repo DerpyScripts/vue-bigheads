@@ -18,6 +18,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'SeriousMouth',
 	props: ['lipColor'],
+	$hasLips: false,
 	data() {
 		return {
 			colors

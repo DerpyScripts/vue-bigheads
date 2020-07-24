@@ -53,6 +53,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'DizzyEyes',
 	props: ['withLashes'],
+	$hasLashes: false,
 	data() {
 		return {
 			colors,

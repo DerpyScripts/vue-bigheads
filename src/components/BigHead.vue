@@ -21,11 +21,17 @@ export default {
 	components: {
 		Base
 	},
+	data() {
+		return {
+			props: ['accessory', 'body', 'clothing', 'clothingColor', 'eyebrows', 'eyes', 'facialHair', 'facialHairColor', 'graphic', 'hair', 'hairColor', 'hat', 'hatColor', 'lashes', 'lipColor', 'mouth', 'shape', 'shapeColor', 'skinTone'],
+		}
+	},
 	computed: {
 		properties() {
 			var extended = properties;
 			var extras =this.$bigHeadsExtras();
-			var props = ['accessory', 'eyebrows', 'eyes', 'facialHair', 'graphic', 'mouth', 'skinTone'];
+			// var props = ['accessory', 'clothingColor', 'eyebrows', 'eyes', 'facialHair', 'facialHairColor', 'graphic', 'hair', 'hairColor', 'mouth', 'skinTone'];
+			var props = this.props;
 			
 			for (var i = 0; i < props.length; i++) {
 				var extras_map = extras[props[i]];

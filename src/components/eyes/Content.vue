@@ -25,6 +25,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'ContentEyes',
 	props: ['withLashes'],
+	$hasLashes: false,
 	data() {
 		return {
 			colors,

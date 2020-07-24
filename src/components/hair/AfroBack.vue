@@ -28,7 +28,6 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'AfroHairBack',
 	props: ['skin', 'color', 'hasHat'],
-	$hatScale: 0,
 	data() {
 		return {
 			colors,

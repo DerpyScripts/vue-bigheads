@@ -53,6 +53,8 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'TankTop',
 	props: ['skin', 'color', 'graphic'],
+	$hasGraphic: true,
+	$customColor: true,
 	data() {
 		return {
 			colors,

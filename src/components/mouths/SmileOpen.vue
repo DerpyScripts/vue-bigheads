@@ -28,6 +28,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'SmileOpen',
 	props: ['lipColor'],
+	$hasLips: false,
 	data() {
 		return {
 			colors

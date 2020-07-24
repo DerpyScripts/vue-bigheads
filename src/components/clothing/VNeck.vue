@@ -109,6 +109,8 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'VNeck',
 	props: ['skin', 'color', 'graphic'],
+	$hasGraphic: true,
+	$customColor: true,
 	data() {
 		return {
 			colors,

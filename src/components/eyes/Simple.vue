@@ -21,6 +21,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'Simple',
 	props: ['withLashes'],
+	$hasLashes: true,
 	data() {
 		return {
 			colors

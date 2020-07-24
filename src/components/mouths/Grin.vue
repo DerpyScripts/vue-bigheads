@@ -36,6 +36,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'Grin',
 	props: ['lipColor'],
+	$hasLips: false,
 	data() {
 		return {
 			colors

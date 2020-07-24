@@ -40,6 +40,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'Lips',
 	props: ['lipColor'],
+	$hasLips: true,
 	data() {
 		return {
 			colors

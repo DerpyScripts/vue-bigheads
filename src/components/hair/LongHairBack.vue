@@ -16,7 +16,6 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'LongHairBack',
 	props: ['skin', 'color', 'hasHat'],
-	$hatScale: 1.12,
 	data() {
 		return {
 			colors,

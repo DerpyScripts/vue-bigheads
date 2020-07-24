@@ -28,6 +28,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'Mohawk',
 	props: ['color'],
+	$hatScale: 0,
 	data() {
 		return {
 			colors

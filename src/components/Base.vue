@@ -92,15 +92,15 @@
 			<component :is="values.clothing.Back" :color="values.clothingColor" :skin="values.skinTone" :graphic="values.graphic" />
 			<component :is="values.body.Front"
 				v-if="values.clothing.Front !== null || values.clothing.Back !== null"
-				:color="values.clothing.Back === DressShirt ? colors.clothing.white : values.clothingColor"
+				:color="breastColor"
 			/>
-			<component :is="values.clothing.Front" :color="values.clothingColor" :skin="values.skinTone" :graphic="values.graphic" />
+			<component :is="values.clothing.Front" :color="values.clothingColor" :skin="values.skinTone" :graphic="values.graphic" :hasBreasts="values.body.Front !== null" />
 			<component :is="values.eyes" :skin="values.skinTone" :withLashes="values.lashes" />
 			<component :is="values.facialHair" :skin="values.skinTone" :color="values.facialHairColor" />
-			<component :is="values.mouth" :skin="values.skinTone" :lipColor="values.lipColor" />
 			<component :is="values.hair.Front" :color="values.hairColor" :skin="values.skinTone" :hasHat="values.hat.Front !== null" />
 			<component :is="values.eyebrows" :skin="values.skinTone" />
 			<component :is="values.hat.Front" :color="values.hatColor" :scale="hatScale" />
+			<component :is="values.mouth" :skin="values.skinTone" :lipColor="values.lipColor" />
 			<component :is="values.accessory" :skin="values.skinTone" />
 		</g>
     </svg>
@@ -108,7 +108,8 @@
 
 <script>
 import { colors } from '../theme.js';
-import DressShirt from './clothing/DressShirt.vue'
+import DressShirt from './clothing/DressShirt.vue';
+import DenimJacket from './clothing/DenimJacket.vue';
 
 export default {
 	name: 'Base',
@@ -116,7 +117,6 @@ export default {
 	data() {
 		return {
 			colors,
-			DressShirt,
 			maskId: "",
 		}
 	},
@@ -128,6 +128,12 @@ export default {
 		hatScale() {
 			if (this.values.hair.Front == null) return 1;
 			return this.values.hair.Front.$hatScale;
+		},
+		breastColor() {
+			if (this.values.clothing.Back === DressShirt) return colors.clothing.white;
+			if (this.values.clothing.Back === DenimJacket) return colors.clothing.blue;
+			
+			return this.values.clothingColor;
 		}
 	}
 }

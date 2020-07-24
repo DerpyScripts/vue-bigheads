@@ -60,6 +60,7 @@ import { colors } from '../../theme.js';
 export default {
 	name: 'PiercedTongue',
 	props: ['lipColor'],
+	$hasLips: false,
 	data() {
 		return {
 			colors

@@ -63,40 +63,40 @@ export default {
 />
 ```
 
-> Please note that the `mask` and `circleColor` properties from the original library have been replaced with `shape` and `shapeColor` respectively, to allow for more mask shapes. A new property `facialHairColor` has been added to allow you to customise facial hair color seperately from the normal hair color.
+> Please note that the `mask` and `circleColor` props from the original library have been replaced with `shape` and `shapeColor` respectively, to allow for more mask shapes. A new prop `facialHairColor` has been added to allow you to customise facial hair color seperately from the normal hair color.
 
-Some possible values for the properties above have been changed, as outlined below:
+Some possible values for the props above have been changed, as outlined below:
 
-### Parameters
-Leaving a parameter empty will result in a random value being chosen.
+### Props
+Leaving a prop empty will result in a random value being chosen.
 | Property           | Possible values            |
 | ------------------ | -------------------------- |
 | accessory          | `'none'`, `'faceMask'`, `'hoopEarrings'`, `'roundGlasses'`, `'shades'`, `'tinyGlasses'` |
 | body               | `'chest'`, `'breasts'` |
-| clothing           | `'naked'`, `'shirt'`, `'dressShirt'`, `'vneck'`, `'tankTop'`, `'dress'` |
-| clothingColor      | `'white'`, `'black'`, `'red'`, `'orange'`, `'yellow'`, `'green'`, `'turqoise'`, `'blue'`, `'pink'`, `'purple'` |
+| clothing           | `'naked'`, `'chequeredShirt'`, `'chequeredShirtDark'`, `'shirt'`, `'denimJacket'`, `'dressShirt'`, `'hoodie'`, `'vneck'`, `'tankTop'`, `'dress'` |
+| clothingColor      | `'white'`, `'gray'`, `'black'`, `'red'`, `'lightRed'`, `'orange'`, `'lightOrange'`, `'yellow'`, `'lightYellow'`, `'green'`, `'lightGreen'`, `'turqoise'`, `'lightTurqoise'`, `'blue'`, `'lightBlue'`, `'pink'`, `'lightPink'`, `'purple'`, `'lighPurple'` |
 | eyebrows           | `'none'`, `'angry'`, `'concerned'`, `'leftLowered'`, `'raised'`, `'serious'` |
-| eyes               | `'normal'`, `'content'`, `'cyborg'`, `'dizzy'`, `'happy'`, `'heart'`, `'leftTwitch'`, `'squint'`, `'simple'`, `'wink'` |
+| eyes               | `'normal'`, `'content'`, `'crazy'`, `'cute'`, `'cyborg'`, `'dizzy'`, `'dollars'`, `'eyePatch'`, `'eyePatch2'`, `'happy'`, `'hearts'`, `'leftTwitch'`, `'squint'`, `'simple'`, `'stars'`, `'wink'` |
 | facialHair         | `'none'`, `'goatee'`, `'mediumBeard'`, `'stubble'` |
-| facialHairColor    | `'white'`, `'blonde'`, `'brown'`, `'black'`, `'red'`, `'orange'`, `'green'`, `'blue'`, `'pink'`, `'purple'` |
+| facialHairColor    | `'white'`, `'silver'`, `'blonde'`, `'brown'`, `'black'`, `'red'`, `'lightRed'`, `'orange'`, `'lightOrange'`, `'green'`, `'lightGreen'`, `'turqoise'`, `'lightTurqoise'`, `'blue'`, `'lightBlue'`, `'pink'`, `'lightPink'`, `'purple'`, `'lighPurple'` |
 | graphic            | `'none'`, `'donut'`, `'gatsby'`, `'graphQL'`, `'rainbow'`, `'react'`, `'redwood'`, `'vue'` |
 | hair               | `'none'`, `'afro'`, `'balding'`, `'bob'`, `'bun'`, `'buzz'`, `'long'`, `'mohawk'`, `'pixie'`, `'short'` |
-| hairColor          | `'white'`, `'blonde'`, `'brown'`, `'black'`, `'red'`, `'orange'`, `'green'`, `'blue'`, `'pink'`, `'purple' |
-| hat                | `'none`', `'beanie'`, `'partyHate'`, `'turban'` |
-| hatColor           | `'white'`, `'black'`, `'red'`, `'orange'`, `'yellow'`, `'green'`, `'turqoise'`, `'blue'`, `'pink'`, `'purple'` |
+| hairColor          | `'white'`, `'silver'`, `'blonde'`, `'brown'`, `'black'`, `'red'`, `'lightRed'`, `'orange'`, `'lightOrange'`, `'green'`, `'lightGreen'`, `'turqoise'`, `'lightTurqoise'`, `'blue'`, `'lightBlue'`, `'pink'`, `'lightPink'`, `'purple'`, `'lighPurple'` |
+| hat                | `'none`', `'beanie'`, `'hijab'`, `'partyHat'`, `'turban'` |
+| hatColor           | `'white'`, `'gray'`, `'black'`, `'red'`, `'lightRed'`, `'orange'`, `'lightOrange'`, `'yellow'`, `'lightYellow'`, `'green'`, `'lightGreen'`, `'turqoise'`, `'lightTurqoise'`, `'blue'`, `'lightBlue'`, `'pink'`, `'lightPink'`, `'purple'`, `'lighPurple'` |
 | lashes             | `'true'`, `'false'` |
-| lipColor           | `'red'`, `'green'`, `'turqoise'`, `'pink'`, `'purple'` |
-| mouth              | `'grin'`, `'lips'`, `'open'`, `'openSmile'`, `'piercedTongue'`, `'sad'`, `'serious'`, `'tongue'` |
+| lipColor           | `'red'`, `'lightRed'`, `'green'`, `'lightGreen'`, `'turqoise'`, `'lightTurqoise'`, `'blue'`,`'lightBlue'`, `'pink'`, `'lightPink'`, `'purple'`, `'lightPurple'` |
+| mouth              | `'grin'`, `'lips'`, `'open'`, `'openSmile'`, `'piercedTongue'`, `'sad'`, `'serious'`, `'tongue'`, `'vomitingRainbow'` |
 | shape              | `'none'`, `'circle'`, `'square'`, `'squircle'` |
-| shapeColor         | `'red'`, `'orange'`, `'yellow'`, `'green'`, `'blue'`, `'purple'` |
+| shapeColor         | `'red'`, `'orange'`, `'yellow'`, `'green'`, `'turqoise'`, `'blue'`, `'pink'`, `'purple'` |
 | skinTone           | `'light'`, `'yellow'`, `'brown'`, `'dark'`, `'red'`, `'black'` |
 
 ### Custom colors
-All color related parameters (i.e. clothingColor, facialHairColor, hairColor, hatColor, lipColor, shapeColor) support custom values. Instead of passing one of the color names above, pass an object with a `base` and `shadow` color.
+All color related props (i.e. clothingColor, facialHairColor, hairColor, hatColor, lipColor, shapeColor) support custom values. Instead of passing one of the color names above, pass an object with a `base` and `shadow` color.
 
-Only HEX colors (3 or 6 characters) are supported - you cannot use RGB or HSL.
+Only HEX colors (3 or 6 characters, with the hash symbol before it) are supported - you cannot use RGB or HSL.
 
-The `shapeColor` property only uses the base color, so the shadow color can be omitted.
+The `shapeColor` props only uses the base color, so the shadow color can be omitted.
 
 #### Example:
 ```vue
@@ -109,10 +109,10 @@ The `shapeColor` property only uses the base color, so the shadow color can be o
 
 
 ## Custom designs
-Some parameters (accessory, eyebrows, eyes, facialHair, graphic, mouth, skinTone) can be extended with your own designs and colors.
+Some props (accessory, eyebrows, eyes, facialHair, graphic, mouth, skinTone) can be extended with your own designs and colors.
 
 ### Illustrations
-All of the above parameters, except `skinTone`, are expandable by passing an object containing Vue single file components when loading the plugin.
+All of the above props, except `skinTone`, are expandable by passing an object containing Vue single file components when loading the plugin.
 
 Here's an example of a custom illustration component:
 
@@ -147,7 +147,7 @@ export default {
 </script>
 ```
 
-The props passed to each component vary depending on what parameter you attach it to:
+The props passed to each component vary depending on what prop you attach it to:
 | Parameter             | Props                      |
 | --------------------- | -------------------------- |
 | accessory             | `skin`                     |
@@ -159,10 +159,10 @@ The props passed to each component vary depending on what parameter you attach i
 
 `skin`, `color` and `lipColor` are instances of the color object, which have a `base` and `shadow` property.
 
-`withLashes` is a boolean that reflects the value of the `lashes` parameter.
+`withLashes` is a boolean that reflects the value of the `lashes` prop.
 
 ### Colors
-The `skinTone` parameter is expandable by passing an object containing color classes (see 'Custom colors' section).
+The `skinTone` prop is expandable by passing an object containing color classes (see 'Custom colors' section).
 
 ### Example config
 ```javascript
@@ -181,4 +181,12 @@ Vue.use(VueBigHeads, {
     }
   }
 });
+```
+### Use in your app
+```vue
+<BigHead
+  ...
+  eyes="mycustomdesign"
+  skinTone="purple"
+/>
 ```
