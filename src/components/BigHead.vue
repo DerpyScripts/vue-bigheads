@@ -29,7 +29,7 @@ export default {
 	computed: {
 		properties() {
 			var extended = properties;
-			var extras =this.$bigHeadsExtras();
+			var extras =this.$bigHeadsExtras?.() || {};
 			// var props = ['accessory', 'clothingColor', 'eyebrows', 'eyes', 'facialHair', 'facialHairColor', 'graphic', 'hair', 'hairColor', 'mouth', 'skinTone'];
 			var props = this.props;
 			
